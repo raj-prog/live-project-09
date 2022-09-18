@@ -8,6 +8,9 @@
   --white: #fff;
   --black: #000;
   --bg-color: #F8F8FA;
+  --text-color: #633CFD;
+  --box-color: 149, 157, 165;
+  --alpha: 0.2;
 }
 
 * {
@@ -92,11 +95,9 @@ nav a {
   margin-bottom: 30px;
 }
 
-/* API section */
+/* API Section */
 .api {
-  /* margin-top: 100px; */
   margin: 80px 60px;
-
 }
 
 .api-heading {
@@ -114,11 +115,71 @@ nav a {
   background-color: var(--white);
   padding: 60px 28px;
   border-radius: 10px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(var(--box-color), var(--alpha)) 0px 8px 24px;
 }
 
 .card-head-active {
   color: var(--hf-color);
 }
 
+/* Blog Section */
+.blog-heading {
+  font-size: 25px;
+  margin: 0 60px;
+}
 
+.blog-cards {
+  margin: 25px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-card {
+  position: relative;
+  border-radius: 8px;
+  border-top-left-radius: 50px;
+  background-color: var(--white);
+  box-shadow: rgba(var(--box-color), var(--alpha)) 0px 8px 24px;
+}
+
+.blog-image {
+  float: left;
+}
+
+.blog-image img {
+  display: block;
+}
+
+.blog-content {
+  float: right;
+  padding: 20px 0;
+  padding-left: 50px;
+  padding-right: 100px;
+}
+
+.blog-content h6 {
+  color: var(--text-color);
+  padding-bottom: 10px;
+}
+
+.blog-content h3 {
+  padding-bottom: 12px;
+}
+
+.blog-bottom, .blog-author {
+  background-color: var(--white);
+}
+
+.blog-card-bottom-image {
+  position: absolute;
+  bottom: -20px;
+  right: 250px;
+}
+
+.blog-author {
+  width: 200px;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
