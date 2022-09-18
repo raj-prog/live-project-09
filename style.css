@@ -1,11 +1,13 @@
 /* POPPINS FONT FAMILY */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 /* CSS Variables */
 :root {
-  --bg-color: #4617FE;
+  --hf-color: #4617FE;
   --white: #fff;
+  --black: #000;
+  --bg-color: #F8F8FA;
 }
 
 * {
@@ -15,8 +17,12 @@
   box-sizing: border-box;
 }
 
-header {
+body {
   background-color: var(--bg-color);
+}
+
+header {
+  background-color: var(--hf-color);
   padding-left: 60px;
   height: 62vh;
   position: relative;
@@ -38,7 +44,7 @@ nav a {
 
 .nav-item-active {
   background-color: var(--white);
-  color: var(--bg-color);
+  color: var(--hf-color);
   padding: 6px 10px;
   border: none;
   border-radius: 3px;
@@ -62,6 +68,7 @@ nav a {
 
 .header-text p {
   font-weight: 300;
+  margin-top: 13px;
 }
 
 .header-image {
@@ -69,6 +76,49 @@ nav a {
   position: absolute;
   top: 90px;
   right: 0;
+}
+
+.companies {
+  margin: 30px 60px;
+}
+
+.company-items {
+  padding-right: 130px;
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 700;
+  font-family: "Righteous" sans-serif;
+  font-size: 23px;
+  margin-bottom: 30px;
+}
+
+/* API section */
+.api {
+  /* margin-top: 100px; */
+  margin: 80px 60px;
+
+}
+
+.api-heading {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-active {
+  background-color: var(--white);
+  padding: 60px 28px;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-head-active {
+  color: var(--hf-color);
 }
 
 
