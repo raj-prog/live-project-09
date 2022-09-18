@@ -11,6 +11,7 @@
   --text-color: #633CFD;
   --box-color: 149, 157, 165;
   --alpha: 0.2;
+  --faq-color: #E9EDFF;
 }
 
 * {
@@ -124,7 +125,7 @@ nav a {
 
 /* Blog Section */
 .blog-heading {
-  font-size: 25px;
+  font-size: 23px;
   margin: 0 60px;
 }
 
@@ -182,4 +183,39 @@ nav a {
   position: absolute;
   bottom: 5px;
   right: 10px;
+}
+
+/* FAQ Section */
+.faq-section {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--faq-color);
+}
+
+.faq-content {
+  padding-left: 60px;
+}
+
+.faq-content h2 {
+  font-size: 45px;
+}
+
+.faq-content h4:nth-of-type(1) {
+  font-size: small;
+  font-weight: normal;
+  padding-top: 5px;
+}
+
+.faq-content h4:nth-of-type(2) {
+  padding: 20px 0;
+}
+
+.faq-content button {
+  color: var(--white);
+  background-color: var(--hf-color);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
 }
