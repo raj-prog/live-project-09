@@ -1,3 +1,4 @@
+/* Mobile Screen */
 @media screen and (max-width: 600px) {
   header {
     height: 95vh;
@@ -20,6 +21,7 @@
   }
 }
 
+/* Tablet Screen */
 @media screen and (max-width: 768px) {
   .nav-item {
     display: none;
@@ -45,7 +47,7 @@
   }
 
   .company-items {
-    padding-right: 20px;
+    margin-right: 10px;
   }
 
   .download-section {
@@ -64,5 +66,39 @@
 
   .faq-content button {
     margin-bottom: 20px;
+  }
+}
+
+/* Laptop/Desktop Screen */
+@media screen and (max-width: 992px) {
+  header {
+    height: 80vh;
+  }
+
+  .header-image {
+    margin-top: 40px;
+    float: right;
+  }
+
+  .company-items {
+    margin-right: 30px;
+  }
+
+  .faq-image img {
+    width: 250px;
+    height: 300px;
+  }
+
+  .download-section {
+    display: block;
+  }
+
+  .download-content {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .download-email input {
+    width: 700px;
   }
 }

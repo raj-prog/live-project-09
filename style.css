@@ -85,7 +85,7 @@ nav a {
 }
 
 .company-items {
-  padding-right: 130px;
+  margin-right: 100px;
   text-decoration: none;
   color: var(--black);
   font-weight: 700;
