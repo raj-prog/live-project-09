@@ -1,0 +1,68 @@
+@media screen and (max-width: 600px) {
+  header {
+    height: 95vh;
+  }
+
+  .header-image {
+    width: 450px;
+  }
+
+  .blog-card-bottom-image {
+    display: none;
+  }
+
+  .faq-content {
+    text-align: start;
+  }
+
+  .download-email input {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-item {
+    display: none;
+  }
+
+  .logo {
+    margin-top: -25px;
+  }
+
+  header {
+    height: 100vh;
+  }
+
+  .header-image {
+    margin-top: 40px;
+    float: none;
+  }
+
+  .faq-image,
+  .footer-section .list,
+  .footer-section .logos-list {
+    display: none;
+  }
+
+  .company-items {
+    padding-right: 20px;
+  }
+
+  .download-section {
+    display: block;
+  }
+
+  .download-content {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .faq-content {
+    margin-left: 45px;
+    text-align: center;
+  }
+
+  .faq-content button {
+    margin-bottom: 20px;
+  }
+}

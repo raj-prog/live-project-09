@@ -1,21 +1,21 @@
 /* POPPINS FONT FAMILY */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 /* CSS Variables */
 :root {
-  --hf-color: #4617FE;
+  --hf-color: #4617fe;
   --white: #fff;
   --black: #000;
-  --bg-color: #F8F8FA;
-  --text-color: #633CFD;
+  --bg-color: #f8f8fa;
+  --text-color: #633cfd;
   --box-color: 149, 157, 165;
   --alpha: 0.2;
-  --faq-in-color: #E9EDFF;
+  --faq-in-color: #e9edff;
 }
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -29,7 +29,6 @@ header {
   background-color: var(--hf-color);
   padding-left: 60px;
   height: 62vh;
-  position: relative;
 }
 
 /* Navbar */
@@ -77,9 +76,8 @@ nav a {
 
 .header-image {
   display: block;
-  position: absolute;
-  top: 90px;
-  right: 0;
+  float: right;
+  margin-top: -250px;
 }
 
 .companies {
@@ -91,7 +89,7 @@ nav a {
   text-decoration: none;
   color: var(--black);
   font-weight: 700;
-  font-family: "Righteous" sans-serif;
+  font-family: 'Righteous' sans-serif;
   font-size: 23px;
   margin-bottom: 30px;
 }
@@ -110,6 +108,9 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .card-active {
@@ -117,6 +118,10 @@ nav a {
   padding: 60px 28px;
   border-radius: 10px;
   box-shadow: rgba(var(--box-color), var(--alpha)) 0px 8px 24px;
+}
+
+.card {
+  padding: 60px 28px;
 }
 
 .card-head-active {
@@ -134,6 +139,8 @@ nav a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 35px;
 }
 
 .blog-card {
@@ -168,7 +175,8 @@ nav a {
   padding-bottom: 12px;
 }
 
-.blog-bottom, .blog-author {
+.blog-bottom,
+.blog-author {
   background-color: var(--white);
 }
 
@@ -243,7 +251,7 @@ nav a {
   border-radius: 25px;
   height: 50px;
   border: none;
-  padding: 0 25px;
+  padding: 0 35px;
 }
 
 .download-email input::placeholder {
