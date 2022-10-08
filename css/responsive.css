@@ -1,23 +1,34 @@
-/* Mobile Screen */
-@media screen and (max-width: 600px) {
+/* Laptop/Desktop Screen */
+@media screen and (max-width: 992px) {
   header {
-    height: 95vh;
+    height: 62vh;
   }
 
   .header-image {
-    width: 450px;
+    margin-top: 40px;
+    float: right;
   }
 
-  .blog-card-bottom-image {
-    display: none;
+  .company-items {
+    margin-right: 30px;
   }
 
-  .faq-content {
-    text-align: start;
+  .faq-image img {
+    width: 250px;
+    height: 300px;
+  }
+
+  .download-section {
+    display: block;
+  }
+
+  .download-content {
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .download-email input {
-    max-width: 400px;
+    width: 700px;
   }
 }
 
@@ -37,7 +48,7 @@
 
   .header-image {
     margin-top: 40px;
-    float: none;
+    width: 450px;
   }
 
   .faq-image,
@@ -69,36 +80,29 @@
   }
 }
 
-/* Laptop/Desktop Screen */
-@media screen and (max-width: 992px) {
+/* Mobile Screen */
+@media screen and (max-width: 600px) {
   header {
-    height: 100vh;
+    height: 95vh;
+  }
+
+  .header-text h2 {
+    font-size: 25px;
   }
 
   .header-image {
-    margin-top: 40px;
-    float: right;
+    width: 400px;
   }
 
-  .company-items {
-    margin-right: 30px;
+  .blog-card-bottom-image {
+    display: none;
   }
 
-  .faq-image img {
-    width: 250px;
-    height: 300px;
-  }
-
-  .download-section {
-    display: block;
-  }
-
-  .download-content {
-    text-align: center;
-    margin-bottom: 20px;
+  .faq-content {
+    text-align: start;
   }
 
   .download-email input {
-    width: 700px;
+    max-width: 400px;
   }
 }
